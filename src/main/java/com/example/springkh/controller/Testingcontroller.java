@@ -10,8 +10,20 @@ import org.springframework.web.bind.annotation.RestController;
 //http://localhost:8072/api
 public class Testingcontroller {
     //http://localhost:8072/api/name
-    @GetMapping ("/name")
-    public String getname(){
-        return "omar saeed " ;
+    @GetMapping("/name")
+    public String getname() {
+        return "omar saeed ";
     }
-}
+//localhost:8072/api/age
+        @GetMapping("/age")
+        public String getage () {
+            return "21 ";
+        }
+    //localhost:8072/api/address
+    @GetMapping("/address")
+    public String getaddress () {
+        return "badr ";
+    }
+
+
+    }
